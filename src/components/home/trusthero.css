@@ -1,0 +1,129 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    gap: 4rem;
+    padding: 2rem 10vw;
+    align-items: center;
+}
+
+.hero-section-image-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.hero-section-content {
+    flex: 1;
+    text-align: start;
+}
+
+.hero-section-tag {
+    display: inline-block;
+    color: #7c3aed;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: -2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-section-title {
+    font-size: 3rem;
+    line-height: 46px;
+    margin-bottom: 0rem;
+    color: #1a1a1a;
+    font-family: 'Sora';
+    font-weight: 400;
+}
+
+.hero-section-description {
+    color: #2f2a2a;
+    width: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section-cta-button {
+    display: inline-block;
+  background-color: #784ac6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 508;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  width: 153px;
+  text-align: center;
+}
+
+
+.hero-section-cta-button:hover {
+    background-color: #6d28d9;
+}
+
+/* Responsive Design */
+
+/* Medium screens (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero-section {
+        gap: 2rem;
+        padding: 2rem 5vw;
+    }
+
+    .hero-section-image-container {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .hero-section-content {
+        flex: 1;
+    }
+
+    .hero-section-tag {
+        font-size: 0.7rem;
+    }
+
+    .hero-section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-section-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-section-cta-button {
+        padding: 0.5rem 1rem;
+        margin-left: 120px;
+    
+    }
+}
+
+/* Small screens (below 768px) */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 5vw;
+        text-align: center;
+    }
+
+    .hero-section-image-container {
+        max-width: 100%;
+    }
+
+    .hero-section-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-section-description {
+        font-size: 1rem;
+    }
+}
